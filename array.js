@@ -549,377 +549,377 @@
 // 3.79. Gauti tik tekstus (string), kurių penktas simbolis nėra t ir kurie turi daugiau simbolių nei 4.
 // 3.80. Gauti tik tekstus (string), kurių pirmas simbolis nėra e, kurie turi mažiau simbolių nei 6 ir kurie neprasideda skaičiumi.
 
-let array3 = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
-console.log(array3)
+// let array3 = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+// console.log(array3)
 
-let result1 = array3.filter(function (x){return x > 0})
-console.log(result1)
+// let result1 = array3.filter(function (x){return x > 0})
+// console.log(result1)
 
-let result2 = array3.filter(function (x){return x < 0})
-console.log(result2)
+// let result2 = array3.filter(function (x){return x < 0})
+// console.log(result2)
 
-let result3 = array3.filter(function (x){return x % 2 === 0})
-console.log(result3)
+// let result3 = array3.filter(function (x){return x % 2 === 0})
+// console.log(result3)
 
-let result4 = array3.filter(function (x){return x % 3 === 0})
-console.log(result4)
+// let result4 = array3.filter(function (x){return x % 3 === 0})
+// console.log(result4)
 
-let result5 = array3.filter(function (x){return x % 5 === 0})
-console.log(result5)
+// let result5 = array3.filter(function (x){return x % 5 === 0})
+// console.log(result5)
 
-let result6 = array3.filter(function (x){return x % 11 === 0})
-console.log(result6)
+// let result6 = array3.filter(function (x){return x % 11 === 0})
+// console.log(result6)
 
-let result7 = array3.filter(function (x){return x % 31 === 0})
-console.log(result7)
+// let result7 = array3.filter(function (x){return x % 31 === 0})
+// console.log(result7)
 
-let result8 = array3.filter(function (x){return x % 2 === 0 && x % 3 === 0})
-console.log(result8)
+// let result8 = array3.filter(function (x){return x % 2 === 0 && x % 3 === 0})
+// console.log(result8)
 
-let result9 = array3.filter(function (x){return x % 3 === 0 && x % 7 === 0})
-console.log(result9)
+// let result9 = array3.filter(function (x){return x % 3 === 0 && x % 7 === 0})
+// console.log(result9)
 
-let result10 = array3.filter(function (x){return x % 5 === 0 && x % 9 === 0})
-console.log(result10)
+// let result10 = array3.filter(function (x){return x % 5 === 0 && x % 9 === 0})
+// console.log(result10)
 
-let result11 = array3.filter(function (x){return x % 5 === 0 && x % 11 === 0})
-console.log(result11)
+// let result11 = array3.filter(function (x){return x % 5 === 0 && x % 11 === 0})
+// console.log(result11)
 
-let result12 = array3.filter(function (x){return x % 2 === 0 && x % 8 === 0 && x % 12 === 0})
-console.log(result12)
+// let result12 = array3.filter(function (x){return x % 2 === 0 && x % 8 === 0 && x % 12 === 0})
+// console.log(result12)
 
-let result13 = array3.filter(function (x){return x % 2 === 0 || x % 3 === 0})
-console.log(result13)
+// let result13 = array3.filter(function (x){return x % 2 === 0 || x % 3 === 0})
+// console.log(result13)
 
-let result14 = array3.filter(function (x){return x % 3 === 0 || x % 5 === 0})
-console.log(result14)
+// let result14 = array3.filter(function (x){return x % 3 === 0 || x % 5 === 0})
+// console.log(result14)
 
-let result15 = array3.filter(function (x){return x % 5 === 0 || x % 6 === 0})
-console.log(result15)
+// let result15 = array3.filter(function (x){return x % 5 === 0 || x % 6 === 0})
+// console.log(result15)
 
-let result16 = array3.filter(function (x){return x % 7 === 0 || x % 8 === 0})
-console.log(result16)
+// let result16 = array3.filter(function (x){return x % 7 === 0 || x % 8 === 0})
+// console.log(result16)
 
-let result17 = array3.filter(function (x){return x % 9 === 0 || x % 13 === 0})
-console.log(result17)
+// let result17 = array3.filter(function (x){return x % 9 === 0 || x % 13 === 0})
+// console.log(result17)
 
-let result18 = array3.filter(function (x){return x % 2 === 0 || x % 3 === 0 || x % 5 === 0})
-console.log(result18)
+// let result18 = array3.filter(function (x){return x % 2 === 0 || x % 3 === 0 || x % 5 === 0})
+// console.log(result18)
 
-let result19 = array3.filter(function (x){return x % 5 === 0 || x % 7 === 0 || x % 9 === 0})
-console.log(result19)
+// let result19 = array3.filter(function (x){return x % 5 === 0 || x % 7 === 0 || x % 9 === 0})
+// console.log(result19)
 
-let result20 = array3.filter(function (x){return x % 7 === 0 || x % 8 === 0 || x % 11 === 0})
-console.log(result20)
+// let result20 = array3.filter(function (x){return x % 7 === 0 || x % 8 === 0 || x % 11 === 0})
+// console.log(result20)
 
-let result21 = array3.filter(function (x){return x % 9 === 0 || x % 12 === 0 || x % 13 === 0})
-console.log(result21)
+// let result21 = array3.filter(function (x){return x % 9 === 0 || x % 12 === 0 || x % 13 === 0})
+// console.log(result21)
 
-let result22 = array3.filter(function (x){return x > 100})
-console.log(result22)
+// let result22 = array3.filter(function (x){return x > 100})
+// console.log(result22)
 
-let result23 = array3.filter(function (x){return x > 555})
-console.log(result23)
+// let result23 = array3.filter(function (x){return x > 555})
+// console.log(result23)
 
-let result24 = array3.filter(function (x){return x >= 888})
-console.log(result24)
+// let result24 = array3.filter(function (x){return x >= 888})
+// console.log(result24)
 
-let result25 = array3.filter(function (x){return x >= 6789})
-console.log(result25)
+// let result25 = array3.filter(function (x){return x >= 6789})
+// console.log(result25)
 
-let result26 = array3.filter(function (x){return x < 50})
-console.log(result26)
+// let result26 = array3.filter(function (x){return x < 50})
+// console.log(result26)
 
-let result27 = array3.filter(function (x){return x < 1000})
-console.log(result27)
+// let result27 = array3.filter(function (x){return x < 1000})
+// console.log(result27)
 
-let result28 = array3.filter(function (x){return x <= -1})
-console.log(result28)
+// let result28 = array3.filter(function (x){return x <= -1})
+// console.log(result28)
 
-let result29 = array3.filter(function (x){return x <= -5564})
-console.log(result29)
+// let result29 = array3.filter(function (x){return x <= -5564})
+// console.log(result29)
 
-let result30 = array3.filter(function (x){return x < 1000 && x > 500})
-console.log(result30)
+// let result30 = array3.filter(function (x){return x < 1000 && x > 500})
+// console.log(result30)
 
-let result31 = array3.filter(function (x){return x < 100 && x > 0})
-console.log(result31)
+// let result31 = array3.filter(function (x){return x < 100 && x > 0})
+// console.log(result31)
 
-let result32 = array3.filter(function (x){return x < 0 && x > -50})
-console.log(result32)
+// let result32 = array3.filter(function (x){return x < 0 && x > -50})
+// console.log(result32)
 
-let result33 = array3.filter(function (x){return x <= 0 && x > -100})
-console.log(result33)
+// let result33 = array3.filter(function (x){return x <= 0 && x > -100})
+// console.log(result33)
 
-let result34 = array3.filter(function (x){return x >= 0 && x < 55})
-console.log(result34)
+// let result34 = array3.filter(function (x){return x >= 0 && x < 55})
+// console.log(result34)
 
-let result35 = array3.filter(function (x){return x >= 444 && x <= 654})
-console.log(result35)
+// let result35 = array3.filter(function (x){return x >= 444 && x <= 654})
+// console.log(result35)
 
-let result36 = array3.filter(function (x){return x > 0 && x % 2 === 0})
-console.log(result36)
+// let result36 = array3.filter(function (x){return x > 0 && x % 2 === 0})
+// console.log(result36)
 
-let result37 = array3.filter(function (x){return x > 0 && x % 3 === 0})
-console.log(result37)
+// let result37 = array3.filter(function (x){return x > 0 && x % 3 === 0})
+// console.log(result37)
 
-let result38 = array3.filter(function (x){return x < 0 && x % 4 === 0})
-console.log(result38)
+// let result38 = array3.filter(function (x){return x < 0 && x % 4 === 0})
+// console.log(result38)
 
-let result39 = array3.filter(function (x){return x < 0 && x % 111 === 0})
-console.log(result39)
+// let result39 = array3.filter(function (x){return x < 0 && x % 111 === 0})
+// console.log(result39)
 
-let result40 = array3.filter(function (x){return x > 500 && x % 2 === 0})
-console.log(result40)
+// let result40 = array3.filter(function (x){return x > 500 && x % 2 === 0})
+// console.log(result40)
 
-let result41 = array3.filter(function (x){return x > 1000 && x % 3 === 0})
-console.log(result41)
+// let result41 = array3.filter(function (x){return x > 1000 && x % 3 === 0})
+// console.log(result41)
 
-let result42 = array3.filter(function (x){return x < 1000 && x % 9 === 0})
-console.log(result42)
+// let result42 = array3.filter(function (x){return x < 1000 && x % 9 === 0})
+// console.log(result42)
 
-let result43 = array3.filter(function (x){return x < 500 && x % 2 === 0})
-console.log(result43)
+// let result43 = array3.filter(function (x){return x < 500 && x % 2 === 0})
+// console.log(result43)
 
-let result44 = array3.filter(function (x){return x >= 33 && x % 3 === 0})
-console.log(result44)
+// let result44 = array3.filter(function (x){return x >= 33 && x % 3 === 0})
+// console.log(result44)
 
-let result45 = array3.filter(function (x){return x >= 444 && x % 12 === 0})
-console.log(result45)
+// let result45 = array3.filter(function (x){return x >= 444 && x % 12 === 0})
+// console.log(result45)
 
-let result46 = array3.filter(function (x){return x <= 155 && x % 5 === 0})
-console.log(result46)
+// let result46 = array3.filter(function (x){return x <= 155 && x % 5 === 0})
+// console.log(result46)
 
-let result47 = array3.filter(function (x){return x <= -333 && x % 9 === 0})
-console.log(result47)
+// let result47 = array3.filter(function (x){return x <= -333 && x % 9 === 0})
+// console.log(result47)
 
-let result48 = array3.filter(function (x){return x > 100 && x < 500 && x % 5 === 0})
-console.log(result48)
+// let result48 = array3.filter(function (x){return x > 100 && x < 500 && x % 5 === 0})
+// console.log(result48)
 
-let result49 = array3.filter(function (x){return x >= 888 && x < 1000 && x % 2 === 0})
-console.log(result49)
+// let result49 = array3.filter(function (x){return x >= 888 && x < 1000 && x % 2 === 0})
+// console.log(result49)
 
-let result50 = array3.filter(function (x){return x <= 888 && x >= -333 && x % 3 === 0 && x !== 0})
-console.log(result50)
+// let result50 = array3.filter(function (x){return x <= 888 && x >= -333 && x % 3 === 0 && x !== 0})
+// console.log(result50)
 
-let result51 = array3.filter(numbersOnly)
-function numbersOnly(x) {return typeof (x) === 'number'}
-console.log(result51)
+// let result51 = array3.filter(numbersOnly)
+// function numbersOnly(x) {return typeof (x) === 'number'}
+// console.log(result51)
 
-let result52 = array3.filter((x) => typeof x === 'string')
-console.log(result52)
+// let result52 = array3.filter((x) => typeof x === 'string')
+// console.log(result52)
 
-let result53 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length > 5) {return true;}})
-console.log(result53)
-
-let result54 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length <= 5) {return true;}})
-console.log(result54)
-
-// 3.55 uzduotys sutampa su 3.54
-let result55 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length <= 5) {return true;}})
-console.log(result55)
-
-
-let result56 = array3.filter(function (x) {
-    let letter = "t"
-    if (typeof (x) === 'string' && x.includes(letter)) {
-            return true;
-        }
-    }
-)
-console.log(result56)
-
-
-let result57 = array3.filter(function (x) {
-    let letter = "y"
-    if (typeof (x) === 'string' && x.includes(letter)) {
-            return true;
-        }
-    }
-)
-console.log(result57)
-
-
-let result58 = array3.filter(function (x) {
-    let letter = "e"
-    let letter2 = "a"
-    if (typeof (x) === 'string' && (x.includes(letter) || x.includes(letter2))) {
-            return true;
-        }
-    }
-)
-console.log(result58)
-
-
-let result59 = array3.filter(function (x) {
-    let letter = "t"
-    let letter2 = "i"
-    if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2))) {
-            return true;
-        }
-    }
-)
-console.log(result59)
-
-
-let result60 = array3.filter(function (x) {
-    let letter = "t"
-    let letter2 = "k"
-    if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2) === false)) {
-            return true;
-        }
-    }
-)
-console.log(result60)
-
-
-let result61 = array3.filter(function (x) {
-    let letter = "a"
-    let letter2 = "s"
-    if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2) === false)) {
-            return true;
-        }
-    }
-)
-console.log(result61)
-
-
-let result62 = array3.filter(function (x) {
-    if (typeof (x) === 'string') {
-            return x;
-        }
-    }).filter(function (x) {
-        const xWithoutT = x.replaceAll("t", "");
-        return x.length - xWithoutT.length >= 2;
-    }
-)
-console.log(result62)
-
-
-let result63 = array3.filter(function (x) {
-    let letter = "st"
-    if (typeof (x) === 'string' && x.includes(letter)) {
-            return true;
-        }
-    }
-)
-console.log(result63)
-
-
-let result64 = array3.filter(function (x) {
-    let letter = "nd"
-    if (typeof (x) === 'string' && x.includes(letter)) {
-            return true;
-        }
-    }
-)
-console.log(result64)
-
-
-let result65 = array3.filter(function (x) {
-    let letter = "s"
-    if (typeof (x) === 'string' && x.includes(letter) === false) {
-            return true;
-        }
-    }
-)
-console.log(result65)
-
-
-let result66 = array3.filter(function (x) {
-    let letter = "t"
-    if (typeof (x) === 'string' && x.includes(letter) === false) {
-            return true;
-        }
-    }
-)
-console.log(result66)
-
-
-let result67 = array3.filter(function (x) {
-    let letter = "r"
-    let letter2 = "l"
-    if (typeof (x) === 'string' && x.includes(letter) === false && x.includes(letter2) === false) {
-            return true;
-        }
-    }
-)
-console.log(result67)
-
-
-let result68 = array3.filter(function (x) {
-    function startsWithNumber(x) {
-        return /^\d/.test(x);
-    }
-    if (typeof (x) === 'string' && startsWithNumber(x)) {
-            return true;
-        }
-    }
-)
-console.log(result68)
-
-
-let result69 = array3.filter(function (x) {if (typeof (x) === 'string' && x.startsWith('s')) {return true;}})
-console.log(result69)
-
-let result70 = array3.filter(function (x) {if (typeof (x) === 'string' && x.startsWith('o')) {return true;}})
-console.log(result70)
-
-let result71 = array3.filter(function (x) {if (typeof (x) === 'string' && x.endsWith('d')) {return true;}})
-console.log(result71)
-
-let result72 = array3.filter(function (x) {if (typeof (x) === 'string' && x.endsWith('s')) {return true;}})
-console.log(result72)
-
-let result73 = array3.filter(function (x) {if (typeof (x) === 'string' && x.includes('o') && x.length > 4) {return true;}})
-console.log(result73)
-
-let result74 = array3.filter(function (x) {if (typeof (x) === 'string' && x.includes('a') && x.length >= 5) {return true;}})
-console.log(result74)
-
-
-let result75 = array3.filter(function (x) {
-    function hasRepeats (x) {
-        return /(.).*\1/.test(x);
-    }
-    if (typeof (x) === 'string' && hasRepeats(x)) {
-            return true;
-        }
-    }
-)
-console.log(result75)
-
-
-let result76 = array3.filter(function (x) {
-    function isUnique(str) {
-        return new Set(str).size == str.length;
-    }
-    let letter = 's'
-    if (typeof (x) === 'string' && isUnique(x) && x.includes(letter)) {
-            return true;
-        }
-    }
-)
-console.log(result76)
-
-
-let result77 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(2) === "a" ) {return true;}})
-console.log(result77)
-
-let result78 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(3) === "l" ) {return true;}})
-console.log(result78)
-
-let result79 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(4) !== "t" && x.length > 4) {return true;}})
-console.log(result79)
-
-
-let result80 = array3.filter(function (x) {
-    function startsWithNumber(x) {
-        return /^\d/.test(x);
-    }
-    if (typeof (x) === 'string' && x.charAt(0) !== "e" && x.length < 6 && startsWithNumber(x) === false) {
-            return true;
-        }
-    }
-)
-console.log(result80)
+// let result53 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length > 5) {return true;}})
+// console.log(result53)
+
+// let result54 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length <= 5) {return true;}})
+// console.log(result54)
+
+// // 3.55 uzduotys sutampa su 3.54
+// let result55 = array3.filter(function (x) {if (typeof (x) === 'string' && x.length <= 5) {return true;}})
+// console.log(result55)
+
+
+// let result56 = array3.filter(function (x) {
+//     let letter = "t"
+//     if (typeof (x) === 'string' && x.includes(letter)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result56)
+
+
+// let result57 = array3.filter(function (x) {
+//     let letter = "y"
+//     if (typeof (x) === 'string' && x.includes(letter)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result57)
+
+
+// let result58 = array3.filter(function (x) {
+//     let letter = "e"
+//     let letter2 = "a"
+//     if (typeof (x) === 'string' && (x.includes(letter) || x.includes(letter2))) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result58)
+
+
+// let result59 = array3.filter(function (x) {
+//     let letter = "t"
+//     let letter2 = "i"
+//     if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2))) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result59)
+
+
+// let result60 = array3.filter(function (x) {
+//     let letter = "t"
+//     let letter2 = "k"
+//     if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2) === false)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result60)
+
+
+// let result61 = array3.filter(function (x) {
+//     let letter = "a"
+//     let letter2 = "s"
+//     if (typeof (x) === 'string' && (x.includes(letter) && x.includes(letter2) === false)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result61)
+
+
+// let result62 = array3.filter(function (x) {
+//     if (typeof (x) === 'string') {
+//             return x;
+//         }
+//     }).filter(function (x) {
+//         const xWithoutT = x.replaceAll("t", "");
+//         return x.length - xWithoutT.length >= 2;
+//     }
+// )
+// console.log(result62)
+
+
+// let result63 = array3.filter(function (x) {
+//     let letter = "st"
+//     if (typeof (x) === 'string' && x.includes(letter)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result63)
+
+
+// let result64 = array3.filter(function (x) {
+//     let letter = "nd"
+//     if (typeof (x) === 'string' && x.includes(letter)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result64)
+
+
+// let result65 = array3.filter(function (x) {
+//     let letter = "s"
+//     if (typeof (x) === 'string' && x.includes(letter) === false) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result65)
+
+
+// let result66 = array3.filter(function (x) {
+//     let letter = "t"
+//     if (typeof (x) === 'string' && x.includes(letter) === false) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result66)
+
+
+// let result67 = array3.filter(function (x) {
+//     let letter = "r"
+//     let letter2 = "l"
+//     if (typeof (x) === 'string' && x.includes(letter) === false && x.includes(letter2) === false) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result67)
+
+
+// let result68 = array3.filter(function (x) {
+//     function startsWithNumber(x) {
+//         return /^\d/.test(x);
+//     }
+//     if (typeof (x) === 'string' && startsWithNumber(x)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result68)
+
+
+// let result69 = array3.filter(function (x) {if (typeof (x) === 'string' && x.startsWith('s')) {return true;}})
+// console.log(result69)
+
+// let result70 = array3.filter(function (x) {if (typeof (x) === 'string' && x.startsWith('o')) {return true;}})
+// console.log(result70)
+
+// let result71 = array3.filter(function (x) {if (typeof (x) === 'string' && x.endsWith('d')) {return true;}})
+// console.log(result71)
+
+// let result72 = array3.filter(function (x) {if (typeof (x) === 'string' && x.endsWith('s')) {return true;}})
+// console.log(result72)
+
+// let result73 = array3.filter(function (x) {if (typeof (x) === 'string' && x.includes('o') && x.length > 4) {return true;}})
+// console.log(result73)
+
+// let result74 = array3.filter(function (x) {if (typeof (x) === 'string' && x.includes('a') && x.length >= 5) {return true;}})
+// console.log(result74)
+
+
+// let result75 = array3.filter(function (x) {
+//     function hasRepeats (x) {
+//         return /(.).*\1/.test(x);
+//     }
+//     if (typeof (x) === 'string' && hasRepeats(x)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result75)
+
+
+// let result76 = array3.filter(function (x) {
+//     function isUnique(str) {
+//         return new Set(str).size == str.length;
+//     }
+//     let letter = 's'
+//     if (typeof (x) === 'string' && isUnique(x) && x.includes(letter)) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result76)
+
+
+// let result77 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(2) === "a" ) {return true;}})
+// console.log(result77)
+
+// let result78 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(3) === "l" ) {return true;}})
+// console.log(result78)
+
+// let result79 = array3.filter(function (x) {if (typeof (x) === 'string' && x.charAt(4) !== "t" && x.length > 4) {return true;}})
+// console.log(result79)
+
+
+// let result80 = array3.filter(function (x) {
+//     function startsWithNumber(x) {
+//         return /^\d/.test(x);
+//     }
+//     if (typeof (x) === 'string' && x.charAt(0) !== "e" && x.length < 6 && startsWithNumber(x) === false) {
+//             return true;
+//         }
+//     }
+// )
+// console.log(result80)
