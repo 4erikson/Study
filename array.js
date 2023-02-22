@@ -89,36 +89,6 @@
 // console.log(output11)
 
 
-//-------------------------------------------------------------
-
-
-// 4. Tęsiant darbą su ankstesniu masyvu atlikti šias užduotis naudojant for ciklą ir map metodą. Kiekvieną užduotį atlikti abiem būdais (for ciklu ir map metodu). Visus narius išvesti į konsole pagal žemiau pateiktas sąlygas:
-// 4.1. Tik skaičius (number tipo duomenis).
-// 4.2. Tik tekstą (string tipo duomenis).
-// 4.3. Tik skaičius (number tipo duomenis) ir juos pakelti 4-tuoju laipsniu.
-// 4.4. Tik skaičius (number tipo duomenis) ir prie jų pridėti 55.
-// 4.5. Tik skaičius (number tipo duomenis) ir juos padalinti iš 2.
-// 4.6. Tik skaičius (number tipo duomenis) ir prieš juos pridėti teksta, tokiu formatu: "Number: 2".
-// 4.7. Tik skaičius (number tipo duomenis) ir pridėti tekstą su jų pačių indeksais, pvz.:
-//   "Index: 0, Number: 2"
-//   "Index: 1, Number: 3"
-//   "Index: 2, Number: 5"
-//   Ir t.t.
-// 4.8. Tik skaičius (number tipo duomenis) ir juos padauginti iš jų pačių indekso.
-// 4.9. Tik skaičius (number tipo duomenis) ir juos padauginti iš ankstesnio nario, pvz.:
-//   - Pirmo skaičiaus dauginti nereikia.
-//   - Antrą skaičių dauginti iš pirmo.
-//   - Trečią skaičių dauginti iš antro.
-//   - Ketvirta skaičių dauginti iš trečio.
-//   - Penktą skaičių dauginti iš ketvirto.
-//   Ir t.t.
-// 4.10. Tik tuos skaičius (number tipo duomenis), kuriuos padauginus iš 5, atsakymas gaunasi didesnis už 350.
-// 4.11. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti kiek simbolių jis turi, pvz. "Start has 5 symbols".
-// 4.12. Tik tekstą (string tipo duomenis), tačiau kiekviena žodžio raidę išskiriant brūkšniu ir paverčiant ją didžiąja raide, pvz.: "S-T-A-R-T".
-// 4.13. Tik tekstą (string tipo duomenis), tačiau kiekviena žodžio pirmą ir trečią raidę pakeičiant brūkšniu (underscore), pvz.: "_t_rt";
-// 4.14. Tik tekstą (string tipo duomenis), tačiau žodį parašant atvirkščiai, pvz.: vietoje "start" parašyti "trats";
-// 4.15. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti tarp kokių narių masyve jis yra, pvz.: "Word obuolys is between -5564 and -51 in the array".
-
 //------------------------------------------------------------------
 
 // 5. Atlikti ta patį, kaip ir ketvirtoje užduotyje, tačiau atsakymus išvesti ne į konsolę, o į ul elementus.
@@ -923,3 +893,345 @@
 //     }
 // )
 // console.log(result80)
+
+// ------------------------------
+
+
+// 4. Tęsiant darbą su ankstesniu masyvu atlikti šias užduotis naudojant for ciklą ir map metodą. Kiekvieną užduotį atlikti abiem būdais (for ciklu ir map metodu). Visus narius išvesti į konsole pagal žemiau pateiktas sąlygas:
+
+let array3 = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+console.log(array3)
+
+// 4.1. Tik skaičius (number tipo duomenis).
+function arrayLoop1(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (!isNaN(arr[i])) {
+            console.log(arr[i])
+        }
+    }
+}
+
+arrayLoop1(array3);
+
+let arrayLoopMap1 = array3.map(function(x){
+        if (!isNaN(x)){
+            console.log(x)
+        }
+    }
+)
+
+
+// 4.2. Tik tekstą (string tipo duomenis).
+function arrayLoop2(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'string') {
+            console.log(arr[i])
+        }
+    }
+} 
+
+arrayLoop2(array3);
+
+let arrayLoopMap2 = array3.map(function(x){
+        if (isNaN(x)){
+            console.log(x)
+        }
+    }
+)
+
+
+// 4.3. Tik skaičius (number tipo duomenis) ir juos pakelti 4-tuoju laipsniu.
+function arrayLoop3(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log(arr[i] ** 4)
+        }
+    }
+} 
+
+arrayLoop3(array3);
+
+let arrayLoopMap3 = array3.map(function(x){
+        if (!isNaN(x)){
+            console.log(x ** 4)
+        }
+    }
+)
+
+
+// 4.4. Tik skaičius (number tipo duomenis) ir prie jų pridėti 55.
+function arrayLoop4(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log(arr[i] + 55)
+        }
+    }
+} 
+
+arrayLoop4(array3);
+
+let arrayLoopMap4 = array3.map(function(x){
+        if (!isNaN(x)){
+            console.log(x + 55)
+        }
+    }
+)
+
+
+// 4.5. Tik skaičius (number tipo duomenis) ir juos padalinti iš 2.
+function arrayLoop5(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log(arr[i] / 2)
+        }
+    }
+} 
+
+arrayLoop5(array3);
+
+let arrayLoopMap5 = array3.map(function(x){
+        if (!isNaN(x)){
+            console.log(x / 2)
+        }
+    }
+)
+
+
+// 4.6. Tik skaičius (number tipo duomenis) ir prieš juos pridėti teksta, tokiu formatu: "Number: 2".
+function arrayLoop6(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log('Number: ' + arr[i])
+        }
+    }
+} 
+
+arrayLoop6(array3);
+
+let arrayLoopMap6 = array3.map(function(x){
+        if (!isNaN(x)){
+            console.log('Number: ' + x)
+        }
+    }
+)
+
+
+// 4.7. Tik skaičius (number tipo duomenis) ir pridėti tekstą su jų pačių indeksais, pvz.:
+//   "Index: 0, Number: 2"
+//   "Index: 1, Number: 3"
+//   "Index: 2, Number: 5"
+//   Ir t.t.
+function arrayLoop7(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log('Index: ' + i + ', ' + 'Number: ' + arr[i])
+        }
+    }
+}
+
+arrayLoop7(array3);
+
+let arrayLoopMap7 = array3.map(function(x, i){
+        if (!isNaN(x)){
+            console.log('Index: ' + i + ', Number: ' + x)
+        }
+    }
+)
+
+
+// 4.8. Tik skaičius (number tipo duomenis) ir juos padauginti iš jų pačių indekso.
+function arrayLoop8(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (typeof arr[i] === 'number') {
+            console.log(arr[i] * i)
+        }
+    }
+}
+
+arrayLoop8(array3);
+
+let arrayLoopMap8 = array3.map(function(x, i){
+        if (!isNaN(x)){
+            console.log(x * i)
+        }
+    }
+)
+
+
+// 4.9. Tik skaičius (number tipo duomenis) ir juos padauginti iš ankstesnio nario, pvz.:
+//   - Pirmo skaičiaus dauginti nereikia.
+//   - Antrą skaičių dauginti iš pirmo.
+//   - Trečią skaičių dauginti iš antro.
+//   - Ketvirta skaičių dauginti iš trečio.
+//   - Penktą skaičių dauginti iš ketvirto.
+//   Ir t.t.
+let numbersArray = array3.filter(item => !isNaN(item))
+function arrayLoop9(arr){
+    for (let i = 0; i < numbersArray.length; i++){
+        if (i > 0) {
+            console.log(arr[i] * arr[i - 1])
+        }
+        else {
+            console.log(arr[i])
+        }
+    }
+}
+
+arrayLoop9(numbersArray);
+
+let onlyNumbers = array3.filter(item => !isNaN(item))
+let arrayLoopMap9 = onlyNumbers.map(function(x, i, a){
+        if (i === 0){
+            console.log(x)
+        }
+        else {
+            console.log(x * a[i - 1])
+        }
+    }
+)
+
+
+// 4.10. Tik tuos skaičius (number tipo duomenis), kuriuos padauginus iš 5, atsakymas gaunasi didesnis už 350.
+function arrayLoop10(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (arr[i] * 5 > 350) {
+            console.log(arr[i])
+        }
+    }
+}
+
+arrayLoop10(array3);
+
+let arrayLoopMap10 = array3.map(function(x){
+        if (!isNaN(x) && x * 5 > 350){
+            console.log(x)
+        }
+    }
+)
+
+
+// 4.11. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti kiek simbolių jis turi, pvz. "Start has 5 symbols".
+function arrayLoop11(arr){
+    for (let i = 0; i < array3.length; i++){
+        if (isNaN(arr[i])) {
+            console.log(arr[i] + ' has ' + arr[i].length + ' symbols')
+        }
+    }
+}
+
+arrayLoop11(array3);
+
+let arrayLoopMap11 = array3.map(function(x){
+        if (isNaN(x)){
+            console.log(x + ' has ' + x.length + ' symbols.')
+        }
+    }
+)
+
+
+// 4.12. Tik tekstą (string tipo duomenis), tačiau kiekviena žodžio raidę išskiriant brūkšniu ir paverčiant ją didžiąja raide, pvz.: "S-T-A-R-T".
+function arrayLoop12(arr){
+    for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] === 'string') {
+
+            let lettersArray = arr[i].split('');
+            let updatedWord = lettersArray.join('-').toUpperCase();
+            console.log(updatedWord);
+        }
+    }
+}
+
+arrayLoop12(array3);
+
+let arrayLoopMap12 = array3.map(function(x){
+        if (isNaN(x)){
+            let lettersArray = x.split('');
+            let updatedWord = lettersArray.join('-').toUpperCase();
+            console.log(updatedWord);
+        }
+    }
+)
+
+
+// 4.13. Tik tekstą (string tipo duomenis), tačiau kiekviena žodžio pirmą ir trečią raidę pakeičiant brūkšniu (underscore), pvz.: "_t_rt";
+function arrayLoop13(arr){
+    for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] === 'string') {
+
+            let lettersArray = arr[i].split('');
+            lettersArray[0] = '_';
+            lettersArray[2] = '_';
+            let updatedWord = lettersArray.join('');
+            console.log(updatedWord);
+        }
+    }
+}
+
+arrayLoop13(array3);
+
+let arrayLoopMap13 = array3.map(function(x){
+        if (isNaN(x)){
+            let lettersArray = x.split('');
+            lettersArray[0] = '_';
+            lettersArray[2] = '_';
+            let updatedWord = lettersArray.join('');
+            console.log(updatedWord);
+        }
+    }
+)
+
+// 4.14. Tik tekstą (string tipo duomenis), tačiau žodį parašant atvirkščiai, pvz.: vietoje "start" parašyti "trats";
+function arrayLoop14(arr){
+    for (let i = 0; i < arr.length; i++) {
+            if (typeof arr[i] === 'string') {
+                let splitedArray = arr[i].split('').reverse()
+                let joinedArray = splitedArray.join('')
+                console.log(joinedArray)
+        }
+    }
+}
+
+arrayLoop14(array3)
+
+let arrayLoopMap14 = array3.map(function(x){
+        if (isNaN(x)){
+            let splitedArray = x.split('').reverse()
+            let joinedArray = splitedArray.join('')
+            console.log(joinedArray)
+        }
+    }
+)
+
+
+// 4.15. Tik tekstą (string tipo duomenis) ir prie kiekvieno teksto parašyti tarp kokių narių masyve jis yra, pvz.: "Word obuolys is between -5564 and -51 in the array".
+function arrayLoop15(arr){
+    for (let i = 0; i < arr.length; i++){
+        if (typeof arr[i] === 'string'){
+            if (i < 1) {
+                console.log("Word " + arr[i] + ' is first in the list. Task cannot be completed.')
+            }
+            else if (i > arr.length - 2){
+                console.log("Word " + arr[i] + ' is last in the list. Task cannot be completed.')
+            }
+            else {
+                console.log("Word " + arr[i] + ' is between ' + arr[i - 1] + ' and ' + arr[i + 1] + ' in the array.')
+            }
+        }
+    }
+}
+arrayLoop15(array3)
+
+let arrayLoopMap15 = array3.map(function(x, i){
+        if (typeof x === 'string'){
+            if (i < 1) {
+                console.log("Word " + x + ' is first in the list. Task cannot be completed.')
+            }
+            else if (i > array3.length - 2){
+                console.log("Word " + x + ' is last in the list. Task cannot be completed.')
+            }
+            else {
+                console.log("Word " + x + ' is between ' + array3[i - 1] + ' and ' + array3[i + 1] + ' in the array.')
+            }
+        }
+    }
+)
